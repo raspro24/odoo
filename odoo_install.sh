@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OE_USER="osys"
+OE_USER="tspro"
 OE_HOME="/data/$OE_USER"
 OE_HOME_EXT="/data/$OE_USER/${OE_USER}-server"
 # The default port where this Odoo instance will run under (provided you use the command -c in the terminal)
