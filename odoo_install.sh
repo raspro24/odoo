@@ -52,7 +52,7 @@ sudo su - postgres -c "createuser -s $OE_USER" 2> /dev/null || true
 # Install Dependencies
 #--------------------------------------------------
 echo -e "\n--- Installing Python 3 + pip3 --"
-sudo apt-get install git python3 python3-pip build-essential wget python3-dev python3-venv python3-wheel python3-setuptools node-less gdebi libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libtiff5-dev libjpeg8-dev libopenjp2-7-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev libharfbuzz-dev libfribidi-dev libxcb1-dev libpq-dev -y
+sudo apt-get install git python3 python3-pip build-essential wget python3-dev python3-venv python3-wheel python3-setuptools python3-gevent node-less gdebi libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libtiff5-dev libjpeg8-dev libopenjp2-7-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev libharfbuzz-dev libfribidi-dev libxcb1-dev libpq-dev software-properties-common wget git build-essential xfonts-75dpi xfonts-base fontconfig libxrender1 node-less libjpeg-dev gdebi postgresql build-essential wget libxslt-dev libzip-dev libldap2-dev libsasl2-dev node-less libjpeg-dev gdebi libpq-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev python3-pypdf2 python3-pil python3-reportlab python3-passlib python3-werkzeug python3-lxml python3-decorator python3-polib python3-psycopg2 python3-dateutil python3-psutil python3-psutil python3-docutils python3-qrcode python3-stdnum python3-zeep python3-pip python3-venv python3-gevent python3-ofxparse python3-ldap -y
 
 echo -e "\n---- Install python packages/requirements ----"
 sudo -H pip3 install -r https://github.com/odoo/odoo/raw/${OE_VERSION}/requirements.txt
